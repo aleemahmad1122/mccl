@@ -18,6 +18,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        myYellow: '#efb600',
+        myGreen: '#00843e',
+        myGray: '#737675',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -51,6 +54,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,6 +1,6 @@
-// import { Routing } from "@/"; 
+import { Routing } from "@/routes/index"; 
 // import { UserState } from "@/types/index";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 // import { jwtDecode } from "jwt-decode";
 // import { useDispatch, useSelector } from "react-redux";
 // import { currentUser } from "./redux/features/authSlice"; 
@@ -11,7 +11,7 @@ const App = () => {
   // const { token } = useSelector((state: UserState) => state.auth);
   // const dispatch = useDispatch();
 
-  // const [isToken, setIsToken] = useState<boolean>(false);
+  const [isToken, setIsToken] = useState<boolean>(false);
 
   // useEffect(() => {
   //   let intervalId: NodeJS.Timeout;
@@ -36,12 +36,11 @@ const App = () => {
 
 
   return (
-
-    <h1>jkjjkj</h1>
-    // <Routing
-    //   isToken={isToken}
-    //   setIsToken={setIsToken}
-    // />
+ 
+    <Routing
+      isToken={isToken}
+      setIsToken={setIsToken}
+    />
   )
 }
 
